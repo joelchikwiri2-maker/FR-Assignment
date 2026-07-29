@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique - Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="header-title">Welcome to the Bean Boutique</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="shop.html">Shop</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="shop.html#coffee-section">Coffee Beans</a></li>
+                        <li><a href="shop.html#brew-section">Brewing Equipment</a></li>
+                    </ul>
+                </li>
+                <li><a href="events.html">Events & Workshops</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        <img src="icons/cart.png" alt="Cart">
+                        <span class="cart-badge">0</span>
+                    </a>
+                </li>
+            </ul>
+    
+            <form id="shop-search-form" class="nav-search">
+                <input type="text" id="shop-search" placeholder="Search products..." autocomplete="off">
+            </form>
+        </nav>
+    </header>
+<main>
+
+    <section class="hero-section">
+        <img src="images/cappuccino.jpg" alt="Hero Image" class="hero-image">
+        <div class="hero-content">
+            <h2 class="hero-title">Welcome to the Bean Boutique</h2>
+            <p class="hero-description">We are a coffee shop that specializes in coffee beans and brewing equipment.</p>
+            <a href="shop.html" class="hero-button">Shop Now</a>
+            <a href="about.html" class="hero-button">Learn More</a>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <h2 class="feature-header">Featured</h2>
+
+                    <!-- COFFEE SLIDE SHOW -->
+
+            <div class="swiper featured-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="feature-card" data-id="ethiopian-sunrise">
+                            <img src="images/ivan-yeo1.jpg" alt="Ethiopian Sunrise Coffee">
+                            <h4 class="feature-cardtitle">Ethiopian Sunrise</h4>
+                            <p class="feature-description">Bright and citrusy with notes of bergamot and honey.</p>
+                            <p class="feature-price">$14.50</p>
+                            <a href="shop.html" class="feature-button">View</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="feature-card" data-id="colombian-reserve">
+                            <img src="images/ivan-yeo2.jpg" alt="Colombian Reserve Coffee">
+                            <h4 class="feature-cardtitle">Colombian Reserve</h4>
+                            <p class="feature-description">Smooth and nutty with a chocolate finish.</p>
+                            <p class="feature-price">$13.00</p>
+                            <a href="shop.html" class="feature-button">View</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="feature-card" data-id="sumatra-dark">
+                            <img src="images/unsplash.jpg" alt="Sumatra Dark">
+                            <h4 class="feature-cardtitle">Sumatra Dark</h4>
+                            <p class="feature-description">Bold and earthy with deep cocoa notes.</p>
+                            <p class="feature-price">$15.00</p>
+                            <a href="shop.html" class="feature-button">View</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="feature-card" data-id="house-blend">
+                            <img src="images/battlecreek-coffee.jpg" alt="House Blend Coffee">
+                            <h4 class="feature-cardtitle">House Blend</h4>
+                            <p class="feature-description">Our signature blend — rich, smooth, and easy to drink any time of day.</p>
+                            <p class="feature-price">$12.00</p>
+                            <a href="shop.html" class="feature-button">View</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="feature-card" data-id="decaf-delight">
+                            <img src="images/battlecreek2.jpg" alt="Decaf Coffee">
+                            <h4 class="feature-cardtitle">Decaf Delight</h4>
+                            <p class="feature-description">All the flavor, none of the caffeine — smooth with a mellow sweetness.</p>
+                            <p class="feature-price">$13.50</p>
+                            <a href="shop.html" class="feature-button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </section>
+
+    <section class="about-teaser">
+        <img src="images/cozy-cafe.jpg" alt="Bean Boutique café interior" class="hero-image">
+        <div class="hero-content">
+            <h2 class="hero-title">Our Story</h2>
+            <p class="hero-description">Bean Boutique started with a simple idea: great coffee shouldn't be complicated.
+            We source our beans directly from small farms, roast in small batches, and pour every
+            cup with care.</p>
+            <a href="about.html" class="hero-button">Learn More</a>
+        </div>
+    </section>
+
+
+    <section class="brew-section">
+        <h2 class="feature-header">Brewing Equipment</h2>
+    
+        <div class="swiper brew-swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="feature-card" data-id="classic-french-press">
+                        <img src="images/french-press.jpg" alt="Classic French Press">
+                        <h4 class="feature-cardtitle">Classic French Press</h4>
+                        <p class="feature-description">Full-bodied brew with rich texture and bold flavor extraction.</p>
+                        <p class="feature-price">$28.00</p>
+                        <a href="shop.html" class="feature-button">View</a>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="feature-card" data-id="ceramic-pour-over-dripper">
+                        <img src="images/pour-over.jpg" alt="Ceramic Pour-Over Dripper">
+                        <h4 class="feature-cardtitle">Ceramic Pour-Over Dripper</h4>
+                        <p class="feature-description">Clean, bright cups with total control over your brew.</p>
+                        <p class="feature-price">$22.00</p>
+                        <a href="shop.html" class="feature-button">View</a>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="feature-card" data-id="precision-burr-grinder">
+                        <img src="images/burr.jpg" alt="Precision Burr Grinder">
+                        <h4 class="feature-cardtitle">Precision Burr Grinder</h4>
+                        <p class="feature-description">Consistent grind size for espresso, drip, or French press.</p>
+                        <p class="feature-price">$65.00</p>
+                        <a href="shop.html" class="feature-button">View</a>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="feature-card" data-id="compact-espresso-machine">
+                        <img src="images/espresso-machine.jpg" alt="Compact Espresso Machine">
+                        <h4 class="feature-cardtitle">Compact Espresso Machine</h4>
+                        <p class="feature-description">Café-quality espresso and lattes from your own kitchen.</p>
+                        <p class="feature-price">$189.00</p>
+                        <a href="shop.html" class="feature-button">View</a>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="feature-card" data-id="stovetop-moka-pot">
+                        <img src="images/moka-pot.jpg" alt="Stovetop Moka Pot">
+                        <h4 class="feature-cardtitle">Stovetop Moka Pot</h4>
+                        <p class="feature-description">Strong, traditional Italian-style coffee on any stovetop.</p>
+                        <p class="feature-price">$24.00</p>
+                        <a href="shop.html" class="feature-button">View</a>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="feature-card" data-id="digital-coffee-scale">
+                        <img src="images/digital-scale.jpg" alt="Digital Coffee Scale">
+                        <h4 class="feature-cardtitle">Digital Coffee Scale</h4>
+                        <p class="feature-description">Nail your ratio every time for a perfectly balanced brew.</p>
+                        <p class="feature-price">$19.00</p>
+                        <a href="shop.html" class="feature-button">View</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+</main>
+<footer>
+        <p>&copy; 2026 Bean Boutique</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+const featuredSwiper = new Swiper('.featured-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    loop: true,
+    noSwiping: true,
+    noSwipingClass: 'feature-button',
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.featured-swiper .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.featured-swiper .swiper-button-next',
+        prevEl: '.featured-swiper .swiper-button-prev',
+    },
+    breakpoints: {
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+    },
+});
+
+const brewSwiper = new Swiper('.brew-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    loop: true,
+    noSwiping: true,
+    noSwipingClass: 'feature-button',
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.brew-swiper .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.brew-swiper .swiper-button-next',
+        prevEl: '.brew-swiper .swiper-button-prev',
+    },
+    breakpoints: {
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+    },
+});
+
+</script>
+</body>
+</html>

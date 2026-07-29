@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique - Offers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="header-title">Welcome to the Bean Boutique</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="shop.html">Shop</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="shop.html#coffee-section">Coffee Beans</a></li>
+                        <li><a href="shop.html#brew-section">Brewing Equipment</a></li>
+                    </ul>
+                </li>
+                <li><a href="events.html">Events & Workshops</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        <img src="icons/cart.png" alt="Cart">
+                        <span class="cart-badge">0</span>
+                    </a>
+                </li>
+            </ul>
+    
+            <form id="shop-search-form" class="nav-search">
+                <input type="text" id="shop-search" placeholder="Search products..." autocomplete="off">
+            </form>
+        </nav>
+    </header>
+<main>
+    <section class="offers-section">
+        <div class="offers-hero">
+            <h1>Special Offers</h1>
+            <p>Seasonal deals on your favorite beans, brewing gear, and more.</p>
+        </div>
+    
+        <div class="offers-grid">
+            <div class="offer-card">
+                <span class="offer-badge">20% OFF</span>
+                <img src="images/ivan-yeo1.jpg" alt="Ethiopian Sunrise">
+                <h4 class="feature-cardtitle">Ethiopian Sunrise</h4>
+                <p class="feature-description">Bright and floral, our best-selling light roast — now 20% off.</p>
+                <p class="offer-expiry">Ends July 20</p>
+                <a href="shop.html#coffee-section" class="feature-button">Shop Now</a>
+            </div>
+    
+            <div class="offer-card">
+                <span class="offer-badge">Bundle Deal</span>
+                <img src="images/pour-over.jpg" alt="Pour-Over Starter Set">
+                <h4 class="feature-cardtitle">Pour-Over Starter Set</h4>
+                <p class="feature-description">Dripper, filters, and a 12oz bag of house blend — bundled and discounted.</p>
+                <a href="shop.html#brew-section" class="feature-button">Shop Now</a>
+            </div>
+    
+            <div class="offer-card">
+                <span class="offer-badge">Buy 2 Get 1</span>
+                <img src="images/battlecreek-coffee.jpg" alt="House Blend">
+                <h4 class="feature-cardtitle">House Blend Bags</h4>
+                <p class="feature-description">Stock up on our signature blend — buy two bags, get a third free.</p>
+                <p class="offer-expiry">Ends August 5</p>
+                <a href="shop.html#coffee-section" class="feature-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Bean Boutique</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
