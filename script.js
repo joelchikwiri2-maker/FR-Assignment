@@ -272,7 +272,20 @@ function initContactForm() {
     });
 }
 
+function initMobileNav() {
+    const navToggle = document.getElementById('nav-toggle');
+    const navEl = document.querySelector('nav');
+
+    if (navToggle && navEl) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = navEl.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    initMobileNav();
     initSearch();
     initShopCards();
     updateCartBadge();
