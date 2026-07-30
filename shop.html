@@ -6,6 +6,20 @@
     <title>Bean Boutique - Coffee Shop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+    /* Mobile nav fixes added inline to avoid touching the main stylesheet for now */
+    @media (max-width: 700px) {
+        .nav-toggle { display: flex; }
+        .header-title { font-size: 1.6rem; }
+        nav { position: relative; }
+        nav ul { flex-direction: column; gap: 0; width: 100%; align-items: center; }
+        nav li { width: 100%; text-align: center; }
+        .nav-search { order: 2; width: 100%; padding: 8px 16px; }
+        .nav-search input { width: 100%; }
+        nav a { padding: 12px 16px; }
+        .cart-link { order: 1; }
+    }
+    </style>
 </head>
 <body>
     <header class="site-header">
