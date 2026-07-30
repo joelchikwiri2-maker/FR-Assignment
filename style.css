@@ -89,6 +89,7 @@ html, body {
     align-items: center;
     background: var(--color-primary);
     border-bottom: 1px solid var(--color-border);
+    padding: 1rem 1.5rem 0;
 }
 
 .header-title {
@@ -96,13 +97,20 @@ html, body {
     font-size: 2.5rem;
     text-align: center;
     margin: 0;
-    padding-right: 50px;
+    padding-right: 70px;
+    width: 100%;
+    max-width: calc(100% - 80px);
 }
 
 @media (max-width: 800px) {
     .header-title {
         font-size: 1.5rem;
-        padding: 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 0;
+        max-width: calc(100% - 60px);
+    }
+
+    .nav-toggle {
+        display: flex;
     }
 }
 
