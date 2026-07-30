@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -170,3 +171,177 @@
     <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique - Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <p class="header-title">Welcome to the Bean Boutique</p>
+        <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="shop.html">Shop</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="shop.html#coffee-section">Coffee Beans</a></li>
+                        <li><a href="shop.html#brew-section">Brewing Equipment</a></li>
+                    </ul>
+                </li>
+                <li><a href="events.html">Events & Workshops</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        <img src="icons/cart.png" alt="Cart">
+                        <span class="cart-badge">0</span>
+                    </a>
+                </li>
+            </ul>
+    
+            <form id="shop-search-form" class="nav-search">
+                <input type="text" id="shop-search" placeholder="Search products..." autocomplete="off">
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="feature-header">Shop</h1>
+        <p id="shop-no-results" class="no-results">No products match your search.</p>
+        
+        <!-- COFFEE SELECTION SECTION -->
+        <section id="coffee-section" class="shop-section">
+            <h2 class="feature-header">Coffee Selection</h2>
+            <div class="shop-grid">
+
+                <div class="shop-card">
+                    <img src="images/ivan-yeo1.jpg" alt="Ethiopian Sunrise Coffee">
+                    <h4 class="shop-title">Ethiopian Sunrise</h4>
+                    <p class="shop-tag">Light Roast · Floral</p>
+                    <p class="shop-description">Bright and citrusy with notes of bergamot and honey.</p>
+                    <p class="feature-price">$14.50</p>
+                    <button type="button" class="feature-button">Add to Cart</button>
+                </div>
+
+                <div class="shop-card">
+                    <img src="images/ivan-yeo2.jpg" alt="Colombian Reserve Coffee">
+                    <h4 class="shop-title">Colombian Reserve</h4>
+                    <p class="shop-tag">Medium Roast · Nutty</p>
+                    <p class="shop-description">Smooth and balanced, with caramel and toasted almond notes.</p>
+                    <p class="feature-price">$13.00</p>
+                    <button type="button" class="feature-button">Add to Cart</button>
+                </div>
+
+                <div class="shop-card">
+                    <img src="images/unsplash.jpg" alt="Sumatra Dark Coffee">
+                    <h4 class="shop-title">Sumatra Dark</h4>
+                    <p class="shop-tag">Dark Roast · Earthy</p>
+                    <p class="shop-description">Bold and full-bodied, with deep chocolate and spice undertones.</p>
+                    <p class="feature-price">$15.00</p>
+                    <button type="button" class="feature-button">Add to Cart</button>
+                </div>
+
+                <div class="shop-card">
+                    <img src="images/battlecreek-coffee.jpg" alt="House Blend Coffee">
+                    <h4 class="shop-title">House Blend</h4>
+                    <p class="shop-tag">Medium-Dark · Signature</p>
+                    <p class="shop-description">Our signature blend — rich, smooth, and easy to drink any time of day.</p>
+                    <p class="feature-price">$12.00</p>
+                    <button type="button" class="feature-button">Add to Cart</button>
+                </div>
+
+                <div class="shop-card">
+                    <img src="images/battlecreek2.jpg" alt="Decaf Delight Coffee">
+                    <h4 class="shop-title">Decaf Delight</h4>
+                    <p class="shop-tag">Medium Roast · Decaf</p>
+                    <p class="shop-description">All the flavor, none of the caffeine — smooth with a mellow sweetness.</p>
+                    <p class="feature-price">$13.50</p>
+                    <button type="button" class="feature-button">Add to Cart</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BREWING EQUIPMENT SECTION -->
+        <section id="brew-section" class="shop-section">
+            <h2 class="feature-header">Brewing Equipment</h2>
+            <div class="shop-grid">
+
+                <div class="shop-card">
+                    <img src="images/french-press.jpg" alt="Classic French Press">
+                    <h4 class="shop-title">Classic French Press</h4>
+                    <p class="shop-tag">Borosilicate Glass · 8-cup</p>
+                    <p class="shop-description">Full-bodied brew with rich texture and bold flavor extraction.</p>
+                    <p class="feature-price">$28.00</p>
+                    <button type="button" class="feature-button">Add to Cart</button>
+                </div>
+
+                <div class="shop-card">
+                    <img src="images/pour-over.jpg" alt="Ceramic Pour-Over Dripper">
+                    <h4 class="shop-title">Ceramic Pour-Over Dripper</h4>
+                    <p class="shop-tag">Ceramic · 1-2 cups</p>
+                    <p class="shop-description">Clean, bright cups with total control over your brew.</p>
+                    <p class="feature-price">$22.00</p>
+                    <button type="button" class="feature-button">Add to Cart</button>
+                </div>
+
+                <div class="shop-card">
+                    <img src="images/burr.jpg" alt="Precision Burr Grinder">
+                    <h4 class="shop-title">Precision Burr Grinder</h4>
+                    <p class="shop-tag">18 Settings · Stainless Steel</p>
+                    <p class="shop-description">Consistent grind size for espresso, drip, or French press.</p>
+                    <p class="feature-price">$65.00</p>
+                    <button type="button" class="feature-button">Add to Cart</button>
+                </div>
+
+                <div class="shop-card">
+                    <img src="images/espresso-machine.jpg" alt="Compact Espresso Machine">
+                    <h4 class="shop-title">Compact Espresso Machine</h4>
+                    <p class="shop-tag">15-Bar · Milk Frother</p>
+                    <p class="shop-description">Café-quality espresso and lattes from your own kitchen.</p>
+                    <p class="feature-price">$189.00</p>
+                    <button type="button" class="feature-button">Add to Cart</button>
+                </div>
+
+                <div class="shop-card">
+                    <img src="images/moka-pot.jpg" alt="Stovetop Moka Pot">
+                    <h4 class="shop-title">Stovetop Moka Pot</h4>
+                    <p class="shop-tag">Aluminum · 6-cup</p>
+                    <p class="shop-description">Strong, traditional Italian-style coffee on any stovetop.</p>
+                    <p class="feature-price">$24.00</p>
+                    <button type="button" class="feature-button">Add to Cart</button>
+                </div>
+
+                <div class="shop-card">
+                    <img src="images/digital-scale.jpg" alt="Digital Coffee Scale">
+                    <h4 class="shop-title">Digital Coffee Scale</h4>
+                    <p class="shop-tag">0.1g Precision · Timer</p>
+                    <p class="shop-description">Nail your ratio every time for a perfectly balanced brew.</p>
+                    <p class="feature-price">$19.00</p>
+                    <button type="button" class="feature-button">Add to Cart</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bean Boutique</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 85ef06b7ffed3ef41249fbe65ebbef221e06c8e7
