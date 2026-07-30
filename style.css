@@ -8,141 +8,141 @@
 */
 
 :root {
-  --color-bg: #fff8f0;
-  --color-bg-alt: #f5ebdd;
-  --color-text: #2e1d14;
-  --color-primary: #6f4e37;
-  --color-secondary: #c08552;
-  --color-accent: #a9714b;
-  --color-cta: #d4a24c;
-  --color-white: #ffffff;
-  --color-border: #e5d5c0;
-  --color-danger: #b23a2e;
-  --font-body: 'Montserrat', 'Satoshi', sans-serif;
+--color-bg: #fff8f0;
+--color-bg-alt: #f5ebdd;
+--color-text: #2e1d14;
+--color-primary: #6f4e37;
+--color-secondary: #c08552;
+--color-accent: #a9714b;
+--color-cta: #d4a24c;
+--color-white: #ffffff;
+--color-border: #e5d5c0;
+--color-danger: #b23a2e;
+--font-body: 'Montserrat', 'Satoshi', sans-serif;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
 html,
 body {
-  width: 100%;
-  overflow-x: hidden;
+width: 100%;
+overflow-x: hidden;
 }
 
 body {
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-body);
-  line-height: 1.5;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+background: var(--color-bg);
+color: var(--color-text);
+font-family: var(--font-body);
+line-height: 1.5;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+max-width: 100%;
+display: block;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+color: inherit;
+text-decoration: none;
 }
 
 main {
-  flex: 1;
+flex: 1;
 }
 
 footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: var(--color-primary);
-  color: var(--color-white);
-  font-size: 0.9rem;
+text-align: center;
+padding: 1.5rem;
+background: var(--color-primary);
+color: var(--color-white);
+font-size: 0.9rem;
 }
 
 /* 0. RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 html, body {
-  width: 100%;
-  overflow-x: hidden;
+width: 100%;
+overflow-x: hidden;
 }
 
 /* 1. MAIN FUNCTIONS (header, nav, main, footer) */
 
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: var(--color-primary);
-  border-bottom: 1px solid var(--color-border);
-  padding: 1rem 1.5rem 0;
+position: sticky;
+top: 0;
+z-index: 50;
+display: flex;
+flex-direction: column;
+align-items: center;
+background: var(--color-primary);
+border-bottom: 1px solid var(--color-border);
+padding: 1rem 1.5rem 0;
 }
 
 .header-title {
-  color: var(--color-white);
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 0;
-  padding-right: 70px;
-  width: 100%;
-  max-width: calc(100% - 80px);
+color: var(--color-white);
+font-size: 2.5rem;
+text-align: center;
+margin: 0;
+padding-right: 70px;
+width: 100%;
+max-width: calc(100% - 80px);
 }
 
 @media (max-width: 800px) {
-  .header-title {
+.header-title {
     font-size: 1.5rem;
     padding: 0.5rem 0.5rem 0.5rem 0;
     max-width: calc(100% - 60px);
-  }
+}
 
-  .nav-toggle {
+.nav-toggle {
     display: flex;
-  }
+}
 }
 
 /* Hamburger toggle button (hidden on desktop) */
 .nav-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 26px;
-  height: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 100;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 26px;
+height: 20px;
+background: none;
+border: none;
+cursor: pointer;
+position: absolute;
+top: 20px;
+right: 20px;
+z-index: 100;
 }
 
 .nav-toggle span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: var(--color-white);
-  border-radius: 2px;
+display: block;
+height: 3px;
+width: 100%;
+background: var(--color-white);
+border-radius: 2px;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 8px 16px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 1rem;
+padding: 8px 16px;
 }
 
 nav ul {
@@ -630,14 +630,14 @@ nav a {
 }
 
 #cart-toast.show {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-  pointer-events: auto;
+opacity: 1;
+transform: translateX(-50%) translateY(0);
+pointer-events: auto;
 }
 
 .about-full {
-  text-align: justify;
-  max-width: 800px;
+text-align: justify;
+max-width: 800px;
 }
 
 .about-full h1 {
